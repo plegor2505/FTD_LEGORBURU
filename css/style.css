@@ -296,8 +296,23 @@ nav{
 .icoInn{
     margin-left: 70px;
     height: auto;
-    margin-top: 200px;
+    margin-top: 180px;
+    animation-name: rotacion1;
+    animation-duration: 2s;
 }
+    @keyframes rotacion1 {
+        0%{transform: rotate(0deg)}
+        50%{transform: rotate(180deg)}
+        100%{transform: rotate(360deg);} 
+}  
+
+/*
+.icoInn:hover{
+    transform: rotate(300deg)
+}
+*/
+/*transform: rotate(300deg)*/
+
 .innovacion{
     font-size:xx-large;
     color:rgb(15, 15, 233);
@@ -305,13 +320,13 @@ nav{
     height: auto;
     align-content: flex-start;
     margin-bottom: 300px;
-    margin-left: 40px;
+    margin-left: 45px;
     margin-top: 20px;
 }
 .icoTra{
     margin-left: 50px;
     height: auto;
-    margin-top: 200px;
+    margin-top: 190px;
 }
 .transparencia{
     font-size:xx-large;
@@ -333,7 +348,7 @@ nav{
     width: 300px;
     height:auto;
     margin-bottom: 300px;
-    margin-left: 43px;
+    margin-left: 45px;
     margin-top: 20px;
 }
 .valores2{
