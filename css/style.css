@@ -1,4 +1,4 @@
-/*ESTILOS GRID EN 2 PAGINAS: INICIO Y PUBLICACIONES*/
+/*ESTILOS GRID EN 3 PAGINAS: INICIO + QUIENES SOMOS + PUBLICACIONES*/
 /*HEADER Y FOOTER APLICAN A TODAS LAS PAGINAS*/
 
 /* ALGUNOS SETEOS COMO ESTILOS UNIVERSALES*/
@@ -7,7 +7,6 @@ margin: 0px;
 padding: 0px;  
 box-sizing: border-box;
 background-color: rgb(6, 6, 26);
-/*background: linear-gradient(to bottom right, blue, black);*/
 font-family: 'League Spartan', sans-serif;
 }
 li{
@@ -194,7 +193,6 @@ nav{
 /*FIN ESTILOS FOOTER*/
 
 /*ESTILOS PAGINA INICIO*/
-
 #titPrincipal{
     color:burlywood;
     font-size: 40px;
@@ -209,15 +207,50 @@ nav{
     background-color: burlywood;
     margin-left: 50px;
 }
+/*
 @keyframes subrayado {
     
 }
+*/
 .imgCuerpo{
     width: 100%;
     height: 450px;
 }
-
 /*FIN INICIO*/
+
+/*ESTILOS PAGINA QUIENES SOMOS*/
+/*OJO SUBTITULO NO ES EXCLUSIVO DE ESTA PAGINA*/
+.subtitulo{
+    background-color:darksalmon;
+    color: rgb(3, 46, 70);
+    font-size: larger;
+    font-family: 'Times New Roman';
+    padding: 15px;
+    border: double 5px white ;
+    margin: 20px;
+}
+/*OJO PARRAFO NO ES EXCLUSIVO DE ESTA PAGINA*/
+#parrafo{
+    font-size: larger;
+    text-align: justify;
+}
+/* buscar los iconos para cada uno de los valores y reformular diseño*/
+#valores{
+    font-size: x-large;
+    color: rgb(45, 49, 250);
+    line-height: 2;
+}
+/*OJO BULLETS NO ES EXCLUSIVO DE ESTA PAG*/
+.bullets{
+    color: white;
+    line-height: 2;
+}
+/* agregar fotos de cada integrante y cuadro para que abra a la Bio de c/u */
+.integrantes{
+    font-size: larger;
+    color: white;
+    line-height: 2;   
+}
 
 /*ESTILOS PAGINA PUBLICACIONES*/
 .titulo{
@@ -309,7 +342,6 @@ nav{
     line-height: 1.3;
     color:white;
 }
-
 /*FIN PUBLICACIONES*/
 
 /*OTROS ESTILOS PARA EL RESTO DE LAS PAGINAS NO MODIFICADOS POR AHORA*/
@@ -326,31 +358,15 @@ nav{
     font-size: larger;
     text-align: justify;
 }
-
-/* buscar los iconos para cada uno de los valores y reformular diseño*/
-
-#valores{
-    font-size: x-large;
-    color: rgb(45, 49, 250);
-    line-height: 2;
-}
 .bullets{
     color: white;
     line-height: 2;
-}
-
-/* agregar fotos de cada integrante y cuadro para que abra a la Bio de c/u */
-.integrantes{
-    font-size: larger;
-    color: white;
-    line-height: 2;   
 }
 .bullets2{
     font-size: larger;
     line-height: 1.5;
     color: white;
 }
-
 /* reordenar para que al menos 2 de los 3 bloques estén orientados vertical / puede ser uno al lado del otro o cada
 uno con un agregado al costado (movimiento) / cambiar color del background de los bloques */
 .underline{
@@ -365,9 +381,7 @@ uno con un agregado al costado (movimiento) / cambiar color del background de lo
     rgb(45, 49, 250)
     rgb(93, 139, 244)
     rgb(223, 246, 255)*/
-
 /* centrar, alinear y achicar formulario / agregar notas en cada campo (completar, obligatorio) / destacar Boton  */
-
 /* mismos comentarios respecto de orientación más vertical y del estilo de letra de los párrafos /
 / agregar elemento que acompañe / agregar imagenes para fondo */
 .subtitulo3{
@@ -385,25 +399,19 @@ uno con un agregado al costado (movimiento) / cambiar color del background de lo
     border: double 5px blue ;
     margin: 20px;
 }
-
 .subtitulo4{
     color: white;
     font-size: large;
     text-align:center;
     line-height: 2;
 }
-
 #tituloTablero{
     text-decoration: underline;
 }
-
 /*FIN OTRAS PAGINAS*/
 
-
 /*ESTILOS RESPONSIVE*/
-
 @media (max-width: 320px){
-
     /*RESPONSIVE HEADER*/
     .headerContainer{
         display: grid;
