@@ -235,10 +235,14 @@ nav{
     grid-template-columns: repeat(3, 1250px);
     grid-template-rows: auto;
     grid-template-areas: 
-    "subtitulo1  subtitulo1    subtitulo1"
-    "subtitulo2  subtitulo2    subtitulo2"
-    "parrafo1     parrafo1     parrafo1"  
-    "innovacion  transparencia eficiencia"     "integridad   calidad      compromiso";
+    "subtitulo1  subtitulo1    subtitulo1 "
+    "subtitulo2  subtitulo2    subtitulo2 "
+    "parrafo1     parrafo1     parrafo1   "
+    " icoInn       icoTra       icoEfi    "
+    "innovacion  transparencia  eficiencia" 
+    "icoInt icoCal icoCom"
+    "integridad   calidad      compromiso"
+    ;
     column-gap: 100px;
     margin: 0px 30px 0px 50px;
     background-color: blanchedalmond;
@@ -275,59 +279,104 @@ nav{
     font-size: 40px;
     text-align: center;
 }
-.valores{
+.valores1{
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    align-items: center;
-    height: 450px;
-    padding-top: 0px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 250px; 
     margin-left: 120px;
-    margin-right: 0px;
-    margin-top: 0px;
+}
+.icoInn{
+    margin-left: 70px;
+    height: auto;
+    margin-top: 200px;
 }
 .innovacion{
     font-size:xx-large;
     color:rgb(15, 15, 233);
     width: 300px;
-    height: 50px;
+    height: auto;
+    align-content: flex-start;
     margin-bottom: 300px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.icoTra{
+    margin-left: 50px;
+    height: auto;
+    margin-top: 200px;
 }
 .transparencia{
     font-size:xx-large;
     color:rgb(15, 15, 233);
     width: 300px;
-    height: 50px;
-    margin-bottom: 300px
+    height:auto;
+    margin-bottom: 300px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.icoEfi{
+    margin-left: 60px;
+    height: auto;
+    margin-top: 200px;
 }
 .eficiencia{
     font-size:xx-large;
     color:rgb(15, 15, 233);
     width: 300px;
-    height: 50px;
+    height:auto;
     margin-bottom: 300px;
+    margin-left: 43px;
+    margin-top: 20px;
+}
+.valores2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 250px; 
+    margin-left: 120px;
+}
+.icoInt{
+    margin-left: 70px;
+    height: auto;
 }
 .integridad{
     font-size:xx-large;
     color:rgb(15, 15, 233);
     width: 300px;
-    height: 50px;
-    margin-bottom: 300px;
+    height:auto;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.icoCal{
+    margin-left: 50px;
+    height: auto;
 }
 .calidad{
     font-size:xx-large;
     color:rgb(15, 15, 233);
     width: 300px;
-    height: 50px;
-    margin-bottom: 300px;
-
+    height:auto;
+    margin-bottom: 100px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.icoCom{
+    margin-left: 30px;
+    height: auto;
+    margin-right: 20px;
 }
 .compromiso{
     font-size:xx-large;
     color:rgb(15, 15, 233);
     width: 300px;
-    height: 50px;
-    margin-bottom: 300px;
+    height:auto;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 /* buscar los iconos para cada uno de los valores y reformular diseño*/
