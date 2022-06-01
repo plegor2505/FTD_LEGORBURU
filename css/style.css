@@ -195,14 +195,15 @@ nav{
 /*ESTILOS PAGINA INICIO*/
 #titPrincipal{
     color:burlywood;
-    font-size: 40px;
+    font-size: 45px;
     font-weight:bold;
     text-align: left;
     margin-top: 130px;
     margin-left: 50px;
+    height: 80px;
 }
 #subrayado{
-    width: 950px;
+    width: 1070px;
     height: 5px;
     background-color: burlywood;
     margin-left: 50px;
@@ -218,33 +219,124 @@ nav{
 }
 /*FIN INICIO*/
 
+/*ESTILOS GENERALES PARA TODAS LAS PAGES*/
+.titulo{
+    font-size: 40px;
+    font-weight:bold;
+    color:burlywood;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 50px; 
+}
+
 /*ESTILOS PAGINA QUIENES SOMOS*/
-/*OJO SUBTITULO NO ES EXCLUSIVO DE ESTA PAGINA*/
-.subtitulo{
-    background-color:darksalmon;
-    color: rgb(3, 46, 70);
-    font-size: larger;
-    font-family: 'Times New Roman';
-    padding: 15px;
-    border: double 5px white ;
-    margin: 20px;
+.section1Container{
+    display: grid;
+    grid-template-columns: repeat(3, 1250px);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "subtitulo1  subtitulo1    subtitulo1"
+    "subtitulo2  subtitulo2    subtitulo2"
+    "parrafo1     parrafo1     parrafo1"  
+    "innovacion  transparencia eficiencia"     "integridad   calidad      compromiso";
+    column-gap: 100px;
+    margin: 0px 30px 0px 50px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
 }
-/*OJO PARRAFO NO ES EXCLUSIVO DE ESTA PAGINA*/
-#parrafo{
-    font-size: larger;
-    text-align: justify;
+.subtitulo1{
+    grid-area: subtitulo1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    color: rgb(18, 50, 155);
+    height: 20px;
+    font-size:x-large;
+    font-weight: bold;
 }
+.subtitulo2{
+    grid-area: subtitulo2;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    color: rgb(18, 50, 155);
+    height: 60px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.parrafo1{
+    grid-area: parrafo1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(18, 50, 155);
+    height: 250px;
+    padding-left: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+.valores{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+    padding-top: 0px;
+    margin-left: 120px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.innovacion{
+    font-size:xx-large;
+    color:rgb(15, 15, 233);
+    width: 300px;
+    height: 50px;
+    margin-bottom: 300px;
+}
+.transparencia{
+    font-size:xx-large;
+    color:rgb(15, 15, 233);
+    width: 300px;
+    height: 50px;
+    margin-bottom: 300px
+}
+.eficiencia{
+    font-size:xx-large;
+    color:rgb(15, 15, 233);
+    width: 300px;
+    height: 50px;
+    margin-bottom: 300px;
+}
+.integridad{
+    font-size:xx-large;
+    color:rgb(15, 15, 233);
+    width: 300px;
+    height: 50px;
+    margin-bottom: 300px;
+}
+.calidad{
+    font-size:xx-large;
+    color:rgb(15, 15, 233);
+    width: 300px;
+    height: 50px;
+    margin-bottom: 300px;
+
+}
+.compromiso{
+    font-size:xx-large;
+    color:rgb(15, 15, 233);
+    width: 300px;
+    height: 50px;
+    margin-bottom: 300px;
+}
+
 /* buscar los iconos para cada uno de los valores y reformular diseño*/
-#valores{
+.valores{
     font-size: x-large;
     color: rgb(45, 49, 250);
     line-height: 2;
 }
-/*OJO BULLETS NO ES EXCLUSIVO DE ESTA PAG*/
-.bullets{
-    color: white;
-    line-height: 2;
-}
+
 /* agregar fotos de cada integrante y cuadro para que abra a la Bio de c/u */
 .integrantes{
     font-size: larger;
@@ -253,14 +345,6 @@ nav{
 }
 
 /*ESTILOS PAGINA PUBLICACIONES*/
-.titulo{
-    font-size: 35px;
-    font-weight:bold;
-    color:burlywood;
-    text-align: left;
-    margin-top: 100px;
-    margin-left: 50px; 
-}
 .bajadaTitulo{
     font-size: large;
     text-align: justify;
