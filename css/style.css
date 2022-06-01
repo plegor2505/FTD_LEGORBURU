@@ -1,0 +1,627 @@
+/*ESTILOS GRID EN 2 PAGINAS: INICIO Y PUBLICACIONES*/
+/*HEADER Y FOOTER APLICAN A TODAS LAS PAGINAS*/
+
+/* ALGUNOS SETEOS COMO ESTILOS UNIVERSALES*/
+body{
+margin: 0px;
+padding: 0px;  
+box-sizing: border-box;
+background-color: rgb(6, 6, 26);
+/*background: linear-gradient(to bottom right, blue, black);*/
+font-family: 'League Spartan', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*ESTILOS PARA EL HEADER-REPITE EN TODAS LAS PAGINAS*/
+.headerContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 80px;
+    grid-template-areas: 
+    "logoTd    none   logoLupa"
+    "logoTd    nav       nav  ";
+}
+.logoTd{
+    grid-area: logoTd;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.logoTd img{
+    width: 250px;
+    height: 163px;
+}
+.logoLupa{
+    grid-area: logoLupa;
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 25px;
+    margin-right: 35px;
+    color: white;
+}
+.logoLupa img{
+    width: 30px;
+    height: 30px;
+}
+nav{
+    grid-area: nav;
+}
+.headerMenu{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+/*
+.headerMenu li{
+    list-style: none;
+}*/
+.headerMenu li a{
+    /*text-decoration: none;*/
+    font-size: xx-large;
+    font-weight: bold;
+    color:white;
+}
+.headerMenu li a:hover{
+    color: red;
+}
+/*FIN ESTILOS HEADER*/
+
+/*ESTILOS PARA EL FOOTER-REPITE EN TODAS LAS PAGINAS*/
+.footerContainer{
+    display: grid;
+    width: 100%;
+    height: 380px;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: 50px 250px 30px 50px;
+    grid-template-areas: 
+    "titCont   titMensaje  titRedes"
+    "footMenu  forMensaje   redes  "
+    " cont       cont       cont   "
+    " pLeg       pLeg       pLeg   ";
+}
+.titCont{
+    grid-area: titCont;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-left: 115px;
+    font-size: x-large;
+    font-weight: bold;
+    color:white
+}
+.titMensaje{
+    grid-area: titMensaje;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    color:white;
+}
+.titRedes{
+    grid-area: titRedes;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding-right: 135px;
+    font-size: x-large;
+    font-weight: bold;
+    color:white;
+}
+.footMenu{
+    grid-area: footMenu;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 150px;
+    border-radius: 15px;
+    padding-left: 52px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    background-color: blanchedalmond;
+    font-size: large;
+    font-weight: bolder;
+}
+.footMenu a{
+    /*text-decoration: none;*/
+    color:black;
+}
+.forMensaje{
+    grid-area: forMensaje;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 210px;
+    border-radius: 15px;
+    padding: 10px 10px 10px 40px;
+    margin-left: 50px;
+    font-size: large;
+    font-weight: bold;
+    background-color: blanchedalmond;
+    color:black;
+}
+#btnSubmit{
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(6, 49, 73);
+    color:white;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 100px;
+    border-radius: 15px;
+    padding-left: 65px;
+    margin-left: 160px;
+    margin-bottom: 20px;
+    background-color:blanchedalmond;
+}
+.cont{
+    grid-area: cont;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:black;
+    padding: 20px 45px 20px 40px;
+    border-top: solid 1px blanchedalmond;
+    border-bottom: solid 1px blanchedalmond;
+    font-size: large;
+    font-weight: bold;
+    color:white;
+}
+.pLeg{
+    grid-area: pLeg;
+    display: flex;
+    background-color:black;
+    justify-content:center;
+    align-items:center;
+    padding: 20px 0px;
+    font-size:large;
+    font-weight: bold;
+    color:white;
+}
+/*FIN ESTILOS FOOTER*/
+
+/*ESTILOS PAGINA INICIO*/
+
+#titPrincipal{
+    color:burlywood;
+    font-size: 40px;
+    font-weight:bold;
+    text-align: left;
+    margin-top: 130px;
+    margin-left: 50px;
+}
+#subrayado{
+    width: 950px;
+    height: 5px;
+    background-color: burlywood;
+    margin-left: 50px;
+}
+@keyframes subrayado {
+    
+}
+.imgCuerpo{
+    width: 100%;
+    height: 450px;
+}
+
+/*FIN INICIO*/
+
+/*ESTILOS PAGINA PUBLICACIONES*/
+.titulo{
+    font-size: 35px;
+    font-weight:bold;
+    color:burlywood;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 50px; 
+}
+.bajadaTitulo{
+    font-size: large;
+    text-align: justify;
+    color: white;
+    line-height: 1.5;
+    padding: 0px 50px 15px 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: solid 1px white;
+}
+.publiForm{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px 450px;
+    grid-template-areas: 
+    "publicaciones publicaciones publicaciones"
+    "   formSus     ilustracion   formParr ";
+    row-gap: 90px;
+    column-gap: 10px;
+}
+.publicaciones{
+    grid-area: publicaciones;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+.formSus{
+    grid-area: formSus;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 370px;
+    justify-content: flex-start;
+    padding: 20px 20px;
+    border: solid 3px white;
+    margin-left: 40px; 
+    background-color: rgb(129, 55, 21);
+    font-size: large;
+    text-align: justify;
+    font-weight: bold;
+    color:white;
+}
+#titForm{
+    font-size: xx-large;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+#btnSubmit2{
+    font-size: x-large;
+    font-weight: bold;
+    background-color: rgb(6, 49, 73);
+    color:white;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.ilustracion{
+    grid-area: ilustracion;
+    display: flex;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgb(129, 55, 21);
+    border: solid 3px white;
+}
+.formParr{
+    grid-area: formParr;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+    margin-right: 50px;
+    font-size: x-large;
+    text-align: justify;
+    line-height: 1.3;
+    color:white;
+}
+
+/*FIN PUBLICACIONES*/
+
+/*OTROS ESTILOS PARA EL RESTO DE LAS PAGINAS NO MODIFICADOS POR AHORA*/
+.subtitulo{
+    background-color:darksalmon;
+    color: rgb(3, 46, 70);
+    font-size: larger;
+    font-family: 'Times New Roman';
+    padding: 15px;
+    border: double 5px white ;
+    margin: 20px;
+}
+#parrafo{
+    font-size: larger;
+    text-align: justify;
+}
+
+/* buscar los iconos para cada uno de los valores y reformular diseño*/
+
+#valores{
+    font-size: x-large;
+    color: rgb(45, 49, 250);
+    line-height: 2;
+}
+.bullets{
+    color: white;
+    line-height: 2;
+}
+
+/* agregar fotos de cada integrante y cuadro para que abra a la Bio de c/u */
+.integrantes{
+    font-size: larger;
+    color: white;
+    line-height: 2;   
+}
+.bullets2{
+    font-size: larger;
+    line-height: 1.5;
+    color: white;
+}
+
+/* reordenar para que al menos 2 de los 3 bloques estén orientados vertical / puede ser uno al lado del otro o cada
+uno con un agregado al costado (movimiento) / cambiar color del background de los bloques */
+.underline{
+    text-decoration: underline;
+}
+/* paletas:
+1   rgb(28, 101, 140)
+    rgb(57, 138, 185)
+    rgb(216, 210, 203)
+    rgb(238, 238, 238)
+2   rgb(5, 19, 103)
+    rgb(45, 49, 250)
+    rgb(93, 139, 244)
+    rgb(223, 246, 255)*/
+
+/* centrar, alinear y achicar formulario / agregar notas en cada campo (completar, obligatorio) / destacar Boton  */
+
+/* mismos comentarios respecto de orientación más vertical y del estilo de letra de los párrafos /
+/ agregar elemento que acompañe / agregar imagenes para fondo */
+.subtitulo3{
+    background-color: aquamarine;
+    color: blue;
+    height: 700px;
+    text-align: center;
+}
+.ejesTematicos{
+    background-color: aquamarine;
+    color: rgb(3, 46, 70);
+    font-size: larger;
+    font-family: 'Times New Roman';
+    padding: 15px;
+    border: double 5px blue ;
+    margin: 20px;
+}
+
+.subtitulo4{
+    color: white;
+    font-size: large;
+    text-align:center;
+    line-height: 2;
+}
+
+#tituloTablero{
+    text-decoration: underline;
+}
+
+/*FIN OTRAS PAGINAS*/
+
+
+/*ESTILOS RESPONSIVE*/
+
+@media (max-width: 320px){
+
+    /*RESPONSIVE HEADER*/
+    .headerContainer{
+        display: grid;
+        grid-template-areas: 
+        "logoTd" "nav";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        }
+    .logoTd{
+        grid-area: logoTd;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        }
+    .logoTd img{
+        width: 150px;
+        height: 98px;
+        }
+    .logoLupa{
+        grid-area: logoLupa;
+        display: none;
+        }
+    .headerMenu{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 80px;
+        }
+    .headerMenu li a{
+        font-size: 15px;
+        }
+    /*RESPONSIVE MAIN*/
+    #titPrincipal{
+        font-size: 22px;
+        text-align:center;
+        margin-top: 30px;
+        margin-left: 0px;
+        }
+    .imgCuerpo{
+        width: 100%;
+        height: 300px;
+        }
+    /*RESPONSIVE FOOTER*/
+        .footerContainer{
+            display: grid;
+            width: 100%;
+            height: 100px;
+            grid-template-areas: 
+            "titMensaje" "forMensaje"
+            "titRedes" "redes" "cont" "pLeg";
+            grid-template-columns:100%;
+            grid-template-rows: auto;
+        }
+        .titCont{
+            grid-area: titCont;
+            display: none;
+        }
+        .titMensaje{
+            grid-area: titMensaje;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: medium;
+        }
+        .titRedes{
+            grid-area: titRedes;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            font-size: medium;
+        }
+        .footMenu{
+            grid-area: footMenu;
+            display: none;
+        }
+        .forMensaje{
+            grid-area: forMensaje;
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 250px;
+            border-radius: 5px;
+            padding: 5px 5px 5px 20px;
+            margin-left: 50px;
+            font-size: medium;
+            font-weight: bold;
+            background-color: blanchedalmond;
+            color:black;
+        }
+        #btnSubmit{
+            font-size: medium;
+            font-weight: bold;
+            background-color: rgb(6, 49, 73);
+            color:white;
+        }
+        .redes{
+            grid-area: redes;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            width: 190px;
+            border-radius: 10px;
+            padding: 20px 20px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            background-color:blanchedalmond;
+        }
+        .cont{
+            grid-area: cont;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color:black;
+            padding: 5px 5px;
+            border-top: solid 1px blanchedalmond;
+            border-bottom: solid 1px blanchedalmond;
+            font-size: 12px;
+            font-weight: normal;
+            color:white;
+        }
+        .pLeg{
+            grid-area: pLeg;
+            display: flex;
+            background-color:black;
+            justify-content:center;
+            align-items:center;
+            padding: 10px 10px;
+            margin: 10px;
+            font-size: medium;
+            font-weight: normal;
+            color:white;
+        }
+    /*RESPONSIVE PUBLICACIONES*/
+    .titulo{
+        font-size: 22px;
+        font-weight:bold;
+        color:burlywood;
+        text-align:center;
+        margin: 10px;
+        border-top: solid 1px white; 
+    }
+    .bajadaTitulo{
+        font-size: 12px;
+        text-align: justify;
+        color: white;
+        line-height: 1.1;
+        padding: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-bottom: solid 1px white;
+    }
+    .publiForm{
+        display: grid;
+        grid-template-areas: 
+        "publicaciones" "formSus"
+        "formParr";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        row-gap: 20px;
+        column-gap: 0px;
+    }
+    .publicaciones{
+        grid-area: publicaciones;
+        display: flex;
+        justify-content:center;
+        margin: 20px;
+    }
+    .publi-1{
+     width: 300px;
+     height: 375px;
+    }
+    .publi-2{
+        display: none;
+    }
+    .publi-3{
+        display: none;
+    }
+    .formSus{
+        grid-area: formSus;
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        height: 330px;
+        justify-content:center;
+        padding: 10px 10px;
+        border: solid 2px white;
+        margin-left: 15px; 
+        background-color: rgb(129, 55, 21);
+        font-size: medium;
+    }
+    #titForm{
+        font-size: x-large;
+        font-weight: bold;
+        color:white;
+        text-align: center;
+    }
+    #btnSubmit2{
+        font-size: large;
+        font-weight: bold;
+        background-color: rgb(6, 49, 73);
+        color:white;
+        text-align: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .ilustracion{
+        grid-area: ilustracion;
+        display: none;
+    }
+    .formParr{
+        grid-area: formParr;
+        display: flex;
+        justify-content:center;
+        margin: 0px 20px;
+        font-size: large;
+        text-align: justify;
+        line-height: 1.1;
+        color:white;
+    }
+}
